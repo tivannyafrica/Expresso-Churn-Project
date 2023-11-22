@@ -8,7 +8,7 @@ from sklearn.preprocessing import StandardScaler, MinMaxScaler
 from sklearn.ensemble import RandomForestRegressor
 import pickle
 
-data = pd.read_csv('expresso_processed.csv.csv')
+data = pd.read_csv('expresso_processed.csv')
 print(data.head())
 
 df = data.copy()

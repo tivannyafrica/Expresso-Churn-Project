@@ -69,7 +69,7 @@ for i in categoricals.columns: # ...............................................
 
 df.head()
 
-sel_cols = ['REGULARITY', 'DATA_VOLUME','REVENUE',  'ORANGE', 'ON_NET', 'MONTANT','FREQUENCE']
+sel_cols = ['REGULARITY', 'DATA_VOLUME','REVENUE', 'ON_NET', 'MONTANT', 'FREQUENCE']
 x = df[sel_cols]
 
 x = x
@@ -107,7 +107,7 @@ st.markdown("<h6>Expresso, a well-known telecommunications provider in Africa un
 
 st.sidebar.image('pngwing.com (8).png')
 
-dx = data[['REGULARITY', 'DATA_VOLUME','REVENUE',  'ORANGE', 'ON_NET', 'MONTANT','FREQUENCE']]
+dx = data[['REGULARITY', 'DATA_VOLUME','REVENUE',  'ON_NET', 'MONTANT','FREQUENCE']]
 st.write(data.head())
 
 input_type = st.sidebar.radio("Select Your Prefered Input Style", ["Slider", "Number Input"])
@@ -116,7 +116,6 @@ if input_type == 'Slider':
     REGULARITY = st.sidebar.slider("REGULARITY", data['REGULARITY'].min(), data['REGULARITY'].max())
     DATA_VOLUME = st.sidebar.slider("DATA_VOLUME", data['DATA_VOLUME'].min(), data['DATA_VOLUME'].max())
     REVENUE = st.sidebar.slider("REVENUE", data['REVENUE'].min(), data['REVENUE'].max())
-    ORANGE = st.sidebar.slider("ORANGE", data['ORANGE'].min(), data['ORANGE'].max())
     ON_NET = st.sidebar.slider("ON_NET", data['ON_NET'].min(), data['ON_NET'].max())
     MONTANT = st.sidebar.slider("MONTANT", data['MONTANT'].min(), data['MONTANT'].max())
     FREQUENCE = st.sidebar.slider("FREQUENCE", data['FREQUENCE'].min(), data['FREQUENCE'].max())
@@ -125,7 +124,6 @@ else:
     REGULARITY = st.sidebar.number_input("REGULARITY", data['REGULARITY'].min(), data['REGULARITY'].max())
     DATA_VOLUME = st.sidebar.number_input("DATA_VOLUME", data['DATA_VOLUME'].min(), data['DATA_VOLUME'].max())
     REVENUE = st.sidebar.number_input("REVENUE", data['REVENUE'].min(), data['REVENUE'].max())
-    ORANGE = st.sidebar.slider("ORANGE", data['ORANGE'].min(), data['ORANGE'].max())
     ON_NET = st.sidebar.slider("ON_NET", data['ON_NET'].min(), data['ON_NET'].max())
     MONTANT = st.sidebar.slider("MONTANT", data['MONTANT'].min(), data['MONTANT'].max())
     FREQUENCE = st.sidebar.slider("FREQUENCE", data['FREQUENCE'].min(), data['FREQUENCE'].max())
@@ -155,6 +153,6 @@ if st.button('Press To Predict'):
 st.markdown('<br><br>', unsafe_allow_html= True)
 
 
-st.markdown("<h8 style = 'color: #860A35; text-align: left; font-family:montserrat'>Expresso Churn built by Datapsalm</h8>",unsafe_allow_html=True)
+st.markdown("<h8 style = 'color: #860A35; text-align: left; font-family:montserrat'>Expresso Churn built by Tivanny Africa</h8>",unsafe_allow_html=True)
 
 

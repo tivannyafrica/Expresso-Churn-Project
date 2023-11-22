@@ -131,7 +131,7 @@ else:
 st.header('Input Values')
 
 # Bring all the inputs into a dataframe
-input_variable = pd.DataFrame([{'REGULARITY':REGULARITY, 'DATA_VOLUME': DATA_VOLUME, 'REVENUE': REVENUE, 'ORANGE':ORANGE, 'ON_NET':ON_NET, 'MONTANT': MONTANT, 'FREQUENCE':FREQUENCE}])
+input_variable = pd.DataFrame([{'REGULARITY':REGULARITY, 'DATA_VOLUME': DATA_VOLUME, 'REVENUE': REVENUE, 'ON_NET':ON_NET, 'MONTANT': MONTANT, 'FREQUENCE':FREQUENCE}])
 
 st.write(input_variable)
 

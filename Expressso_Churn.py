@@ -95,11 +95,11 @@ print(f'\nModel is Saved\n')
 #-------Streamlit development------
 model = pickle.load(open('Expresso_churn.pkl', "rb"))
 
-st.markdown("<h1 style = 'color: #860A35; text-align: center; font-family:  montserrat'>EXPRESSO CHURN</h1>", unsafe_allow_html=True)
-st.markdown("<h6 style = 'margin: -15px; color: #860A35; text-align: center; font-family:montserrat'>Churn Prediction for Expresso Clients</p></h6>", unsafe_allow_html=True)
+st.markdown("<h1 style = 'color: #FFEBD8; text-align: center; font-family:  montserrat'>EXPRESSO CHURN</h1>", unsafe_allow_html=True)
+st.markdown("<h6 style = 'margin: -15px; color: #FFEBD8; text-align: center; font-family:montserrat'>Churn Prediction for Expresso Clients</p></h6>", unsafe_allow_html=True)
 st.markdown('<br1>', unsafe_allow_html= True)
 st.image('bg.jpeg',width = 400) #---- to give it image
-st.markdown("<h5 style='color: #ffffff; background-color: #860A35; text-align: center; padding: 5px; font-family: Arial, sans-serif;'>BACKGROUND OF STUDY</h5>", unsafe_allow_html=True)
+st.markdown("<h5 style='color: #ffffff; background-color: #FFEBD8; text-align: center; padding: 5px; font-family: Arial, sans-serif;'>BACKGROUND OF STUDY</h5>", unsafe_allow_html=True)
 
 st.markdown('<br1>', unsafe_allow_html= True)
 
@@ -140,7 +140,7 @@ for i in input_variable.columns:
     input_variable[i] = StandardScaler().fit_transform(input_variable[[i]])
 
 st.markdown('<hr>', unsafe_allow_html=True)
-st.markdown("<h4 style = 'color: #860A35; text-align: left; font-family: montserrat '>Model Report</h4>", unsafe_allow_html = True)
+st.markdown("<h4 style = 'color: #FFEBD8; text-align: left; font-family: montserrat '>Model Report</h4>", unsafe_allow_html = True)
 
 
 
@@ -153,6 +153,6 @@ if st.button('Press To Predict'):
 st.markdown('<br><br>', unsafe_allow_html= True)
 
 
-st.markdown("<h8 style = 'color: #860A35; text-align: left; font-family:montserrat'>Expresso Churn built by Tivanny Africa</h8>",unsafe_allow_html=True)
+st.markdown("<h8 style = 'color: #FFEBD8; text-align: left; font-family:montserrat'>Expresso Churn built by Tivanny Africa</h8>",unsafe_allow_html=True)
 
 
